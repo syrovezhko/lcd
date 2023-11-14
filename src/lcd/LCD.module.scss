@@ -1,0 +1,94 @@
+.board {
+	width: 300px;
+	height: 157px;
+	background-color: #215504;
+	padding: 4px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.mounting {
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	background-color: #806c51;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&_line {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+	&_hole {
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		background-color: #242424;
+	}
+}
+
+.screen {
+	width: 257px;
+	height: 90px;
+	background-color: rgb(49, 59, 61);
+	margin-bottom: 10px;
+	padding: 5px 10px;
+	clip-path: polygon(
+		0% 5%,
+		2% 0%,
+		98% 0%,
+		100% 5%,
+		100% 30%,
+		99% 30%,
+		99% 70%,
+		100% 70%,
+		100% 95%,
+		98% 100%,
+		2% 100%,
+		0% 95%,
+		0% 70%,
+		1% 70%,
+		1% 30%,
+		0% 30%
+	);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	&__groove {
+		height: 4px;
+		width: 100%;
+		background: rgb(43, 51, 53);
+		border-radius: 2px;
+		box-shadow: inset 0px 1px 0px rgba(0, 0, 0, 0.9);
+	}
+	&__field {
+		height: 57px;
+		width: 236px;
+		background-color: #119c44;
+		border-radius: 3px;
+		padding: 8px 17.5px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		gap: 1.4px;
+	}
+	&__line{
+		display: flex;
+		width: 100%;
+		list-style: none;
+		height: 21.25px;
+		gap: 2.15px;
+	}
+	// TODO: make pixels
+	&__character{
+		width: 10.5px;
+		height: 100%;
+		background-color: red;
+	}
+	&__pixel{}
+}
